@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+* {
+    font-family: 'Special Elite', cursive;
+    box-sizing: border-box;
+    font-size: 99%;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(138, 131, 131, 0.9), rgba(211, 211, 211, 0.1));
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+nav {
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: lightgray;
+    font-size: 80%;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(114, 108, 108);
+    padding: 1vh 0;
+}
+
+main {
+    height: 80vh;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    height: 5vh;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.5em;
+}
+
+hr {
+    margin: 0;
+    width: 100%;
+}
+
+#webdev {
+    margin-top: 10%;
+}
+
+/* index.html */
+
+#main-me {
+    border-radius: 50%;
+    height: 40%;
+}
+
+@media (min-width: 700px) {
+    * {
+        font-size: 110%;
+    }
+
+    header {
+        font-size: 180%;
+    }
+
+    nav {
+        font-size: 100%;
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+}
