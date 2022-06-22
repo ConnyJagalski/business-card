@@ -16,7 +16,42 @@
         <a href="projects.html">Projects</a>
         <a href="contact.html"><strong>Contact</strong></a>
     </nav>
-    <main></main>
+    <main>
+        <h1>Kontaktieren Sie mich</h1>
+        <p>
+            Conny Jagalski - Junior Webdeveloper
+            <br>
+            coni.jaga@gmail.com
+        </p>
+        <form action="https://formspree.io/f/xqknnkrr" method="post">
+            <fieldset>
+                    <h3>Schreiben Sie mir gerne eine Nachricht:</h3>
+                    <article>
+                        <section>
+                            <label for="email">Ihre Email*</label>
+                            <br>
+                            <input type="email" name="email" id="email" placeholder="Ihre Email" required>
+                        </section>
+                        <section>
+                            <label for="name">Ihr Name*</label>
+                            <br>
+                            <input type="text" name="name" id="name" placeholder="Ihr Name" required>
+                        </section>
+                        <section>
+                            <label for="telefon">Ihre Telefon-/Mobilnummer*</label>
+                            <br>
+                            <input type="tel" name="telefon" id="telefon" placeholder="Handynummer" required>
+                        </section>
+                    </article>
+                <section>
+                    <label for="nachricht">Ihre Nachricht an mich:</label>
+                    <br>
+                    <textarea name="nachricht" id="nachricht" placeholder="Ihre Nachricht"></textarea>
+                </section>
+            </fieldset>
+            <button type="submit">Senden</button>
+        </form>
+    </main>
     <footer></footer>
 </body>
 </html>
