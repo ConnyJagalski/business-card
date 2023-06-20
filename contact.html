@@ -1,57 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Conny Jagalski">
-    <link rel="stylesheet" href="style.css">
-    <title>Contact</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Conny Jagalski, Front End Web Developer, coni.jaga@gmail.com">
+  <link rel="stylesheet" href="style.css">
+  <title>Conny Jagalski - Front End Web Developer</title>
 </head>
+
 <body>
-    <header>Contact me</header>
+  <header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="knowledge.html">Knowledge</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html"><strong>Contact</strong></a>
+      <ul class="nav-ul">
+        <li><a href="index.html" title="du bist hier" class="nav-link">Start</a></li>
+        <li><a href="cv.html" title="was bisher geschah..." class="nav-link">Lebenslauf</a></li>
+        <li><a href="projects.html" title="meine bisherigen Projekte" class="nav-link">Projekte</a></li>
+        <li><a href="contact.html" title="kontaktieren Sie mich!" class="nav-link current">Kontakt</a></li>
+      </ul>
     </nav>
-    <main>
-        <h1>Kontaktieren Sie mich</h1>
-        <p>
-            Conny Jagalski - Junior Webdeveloper
-            <br>
-            coni.jaga@gmail.com
-        </p>
-        <form action="https://formspree.io/f/xqknnkrr" method="post">
-            <fieldset>
-                    <h3>Schreiben Sie mir gerne eine Nachricht:</h3>
-                    <article>
-                        <section>
-                            <label for="email">Ihre Email*</label>
-                            <br>
-                            <input type="email" name="email" id="email" placeholder="Ihre Email" required>
-                        </section>
-                        <section>
-                            <label for="name">Ihr Name*</label>
-                            <br>
-                            <input type="text" name="name" id="name" placeholder="Ihr Name" required>
-                        </section>
-                        <section>
-                            <label for="telefon">Ihre Telefon-/Mobilnummer*</label>
-                            <br>
-                            <input type="tel" name="telefon" id="telefon" placeholder="Handynummer" required>
-                        </section>
-                    </article>
-                <section>
-                    <label for="nachricht">Ihre Nachricht an mich:</label>
-                    <br>
-                    <textarea name="nachricht" id="nachricht" placeholder="Ihre Nachricht"></textarea>
-                </section>
-            </fieldset>
-            <button type="submit">Senden</button>
-        </form>
-    </main>
-    <footer></footer>
+  </header>
+  <main class="contact-main">
+    <h1>Kontaktieren Sie mich</h1>
+    <h2>Conny Jagalski</h2>
+    <p class="mail-heading">Junior Front End Web Entwicklerin</p>
+    <button class="mail-button">
+      Mail: <a href="mailto:coni.jaga@gmail.com" class="mail-link">coni.jaga@gmail.com</a>
+    </button>
+  </main>
 </body>
 </html>

@@ -1,31 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Conny Jagalski">
-    <link rel="stylesheet" href="style.css">
-    <title>Conny Jagalski - Junior Web Developer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Conny Jagalski, Front End Web Developer, coni.jaga@gmail.com">
+  <link rel="stylesheet" href="style.css">
+  <title>Conny Jagalski - Front End Web Developer</title>
 </head>
 <body>
-    <header>Introducing myself</header>
+  <header>
     <nav>
-        <a href="index.html"><strong>Home</strong></a>
-        <a href="knowledge.html">Knowledge</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+      <ul class="nav-ul">
+        <li><a href="index.html" title="du bist hier" class="nav-link current">Start</a></li>
+        <li><a href="cv.html" title="was bisher geschah..." class="nav-link">Lebenslauf</a></li>
+        <li><a href="projects.html" title="meine bisherigen Projekte" class="nav-link">Projekte</a></li>
+        <li><a href="contact.html" title="kontaktieren Sie mich!" class="nav-link">Kontakt</a></li>
+      </ul>
     </nav>
-    <main id="index-main">
-        <h2>Conny Jagalski</h2>
-        <img id="main-me" src="./bilder/ich.jpg" alt="picture of myself">
-        <h2 id="webdev">Junior Web Developer</h2>
-        <p>Want more customers? Want more time for the important things in life? Don't want to think about your website?
-        </p>
-        <hr>
-        <p>Here is your solution! Just ask me! I will create your complete website!</p>
-    </main>
-    <footer>
-    </footer>    
+  </header>
+  <main class="index-main">
+    <article class="index-article">
+      <h1>Conny Jagalski</h1>
+      <img src="./pictures/ich.jpg" alt="picture of myself" class="img-me">
+      <h2>Junior Front End Web Entwicklerin</h2>
+    </article>
+    <article class="index-article overflow">
+      <p>Willkommen auf meiner Webseite!</p>
+      <p>Ich bin eine der Glücklichen, die ihr Hobby zum Beruf gemacht haben. Ich liebe es immer wieder Neues zu lernen und
+      versuche mich selbst zu übertreffen ^^.</p>
+      <p>Wenn ich mal nicht vor dem PC sitze und code, bin ich am liebsten am Wasser oder im Wald unterwegs.</p>
+      <p>Und auch, wenn ich keinen grünen Daumen habe (lol), versuche ich alles zu begrünen - jede Fensterbank, jedes
+      Stückchen Erde und selbst die Wände sind vor mir nicht sicher xD.</p>
+      <p>Wenn du mehr über mich wissen willst
+      <a href="mailto:coni.jaga@gmail.com">schreib mir</a> oder lade mich zu einem Gespräch ein. Ich freue mich über jeden
+      Kontakt!</p>
+    </article>
+  </main>
 </body>
 </html>

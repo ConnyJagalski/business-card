@@ -1,22 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Conny Jagalski">
-    <link rel="stylesheet" href="style.css">
-    <title>Projects</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Conny Jagalski, Front End Web Developer, coni.jaga@gmail.com">
+  <link rel="stylesheet" href="style.css">
+  <title>Conny Jagalski - Front End Web Developer</title>
 </head>
+
 <body>
-    <header>View my projects</header>
+  <header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="knowledge.html">Knowledge</a>
-        <a href="projects.html"><strong>Projects</strong></a>
-        <a href="contact.html">Contact</a>
+      <ul class="nav-ul">
+        <li><a href="index.html" title="du bist hier" class="nav-link">Start</a></li>
+        <li><a href="cv.html" title="was bisher geschah..." class="nav-link">Lebenslauf</a></li>
+        <li><a href="projects.html" title="meine bisherigen Projekte" class="nav-link current">Projekte</a></li>
+        <li><a href="contact.html" title="kontaktieren Sie mich!" class="nav-link">Kontakt</a></li>
+      </ul>
     </nav>
-    <main></main>
-    <footer></footer>
+  </header>
+  <main class="projects-main">
+    <article>
+      <h2>Meine bisherigen Projekte</h2>
+      <p class="project-info">anklicken für mehr Info</p>
+    </article>
+    <div class="projects-div">
+      <article class="projects-article github">
+        <a href="https://github.com/ConnyJagalski" target="_blank" class="projects-link">
+        </a>
+        </article>
+      <article class="projects-article restaurant-gk">
+        <a href="https://connyjagalski.github.io/Restaurant-GK/" target="_blank" class="projects-link">
+        </a>
+      </article>
+      <article class="projects-article umweltschutz">
+        <a href="https://connyjagalski.github.io/22-05-16-projekt-umweltschutz/" target="_blank" class="projects-link">
+        </a>
+      </article>
+      <article class="projects-article bmi">
+        <a href="https://connyjagalski.github.io/BMI-Rechner/" target="_blank" class="projects-link">
+        </a>
+      </article>
+      <article class="projects-article reiseführer">
+        <a href="https://connyjagalski.github.io/reisefuehrer-koeln/" target="_blank" class="projects-link">
+        </a>
+      </article>
+      <article class="projects-article casino">
+        <a href="https://connyjagalski.github.io/casino-royale/" target="_blank" class="projects-link">
+        </a>
+      </article>
+    </div>
+  </main>
 </body>
 </html>

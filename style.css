@@ -1,145 +1,285 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-
 * {
-    font-family: 'Special Elite', cursive;
-    box-sizing: border-box;
-    font-size: 99%;
-    line-height: 150%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background: linear-gradient(rgb(58, 3, 109), rgba(137, 43, 226, 0.187) 50%, rgba(137, 43, 226, 0.091));
+  --background-color: rgb(109, 72, 143);
+}
+
+html {
+  font-size: calc(1rem + 2vw);
 }
 
 body {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(rgba(138, 131, 131, 0.9), rgba(211, 211, 211, 0.1));
+  width: 100vw;
+  background: var(--background);
+  background-attachment: fixed;
 }
 
 header {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 120%;
-    font-weight: bold;
+  width: 100%;
+  position: sticky;
+  top: 0;
 }
 
 nav {
-    height: 5vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: lightgray;
-    font-size: 80%;
+  padding: 1rem;
+  background-color: var(--background-color);
 }
 
-nav a {
-    text-decoration: none;
-    color: rgb(114, 108, 108);
-    padding: 1vh 0;
+li {
+  list-style-type: none;
 }
 
-main {
-    height: 80vh;
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.nav-ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-footer {
-    height: 5vh;
+.nav-link {
+  display: block;
+  color: rgb(210, 207, 207);
+  padding: 0.5rem;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    line-height: 1.5em;
+.current {
+  font-weight: bold;
+  font-size: 120%;
 }
 
-hr {
-    margin: 0;
-    width: 100%;
+h1 {
+  margin: 1rem;
 }
 
-#webdev {
-    margin-top: 10%;
+h2 {
+  padding: 1rem;
+}
+
+p {
+  margin: 1rem 2rem;
 }
 
 /* index.html */
 
-#main-me {
-    border-radius: 50%;
-    height: 40%;
+.img-me {
+  width: 50vw;
+  min-width: 250px;
+  border-radius: 50%;
+  margin: 1rem;
+  box-shadow: 0.2rem 0.2rem 1rem rgb(46, 43, 43);
+}
+
+.index-main {
+  width: 100%;
+  /* height: 100vh; */
+  text-align: center;
+}
+
+.overflow {
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+/* cv.html */
+
+.cv-article {
+  margin: 1rem;
+}
+
+.cv-second-heading {
+  padding: 0.5rem 0 0.3rem 0.5rem;
+}
+
+.cv-article ul {
+  margin-left: 1.5rem;
+}
+
+.cv-article li {
+  padding-top: 0.2rem;
+}
+
+/* projects.html */
+
+.project-info {
+  margin-bottom: 3vh;
+}
+
+.github {
+  background-image: url(/pictures/Github-Profil.png);
+  background-size: cover;
+}
+
+.restaurant-gk {
+  background-image: url(/pictures/Restaurant.png);
+  background-size: cover;
+}
+
+.umweltschutz {
+  background-image: url(/pictures/Umweltschutz.png);
+  background-size: cover;
+}
+
+.bmi {
+  background-image: url(/pictures/BMI.png);
+  background-size: cover;
+}
+
+.reiseführer {
+  background-image: url(/pictures/Reiseführer.png);
+  background-size: cover;
+}
+
+.casino {
+  background-image: url(/pictures/Casino.png);
+  background-size: cover;
+}
+
+.projects-main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-article, .projects-link {
+  width: 60vw;
+  height: 30vw;
+  border-radius: 1rem;
+  display: block;
+  margin: 2rem;
 }
 
 /* contact.html */
 
-form {
-    text-align: center;
-    width: 80vw;
-    font-size: 15px;
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-fieldset {
-    border: none;
-    text-align: left;
+.mail-heading {
+  margin: 1rem;
+  font-size: 1.5rem;
 }
 
-section {
+.mail-button {
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: rgba(89, 89, 184, 0.543);
+  border-radius: 1rem;
+  font-size: 1rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(46, 43, 43);
+}
+
+.mail-link {
+  color: #000;
+}
+
+@media screen and (min-width:1000px) {
+  
+  html {
+  font-size: 1.5rem;
+  }
+
+  body {
+    height: 100vh;
+  }
+
+  /* index.html */
+
+  .index-main {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .index-article {
+    max-width: 45vw;
+  }
+
+  .img-me {
+    max-width: 20vw;
+  }
+
+  /* cv.html */
+
+  .cv-main {
+    font-size: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .cv-article {
+    width: 30vw;
+    height: 60vh;
+    overflow-y: scroll;
+  }
+
+  /* projects.html */
+
+  .projects-div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  
+  .projects-article {
+    width: 30vw;
+    height: 13vw;
+    border-radius: 0 90%;
+    box-shadow: 0 13vw 0 black inset;
+    transition: box-shadow 0.75s;
+  }
+
+  .projects-article:hover {
+    box-shadow: none;
+  }
+  
+  .projects-link {
     display: block;
-    margin: 5px 0;
-}
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: rgb(69, 179, 235);
+    visibility: hidden;
+  }
 
-article section {
-    width: 100%;
-}
+  .github {
+    background-image: url(/pictures/Github-Profil.png);
+    background-size: cover;
+  }
 
-input, textarea {
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 5px;
-    background-color: rgba(3, 152, 158, 0.1);
-    font-size: 15px;
-}
+  .restaurant-gk {
+    background-image: url(/pictures/Restaurant.png);
+    background-size: cover;
+  }
 
-input::placeholder, textarea::placeholder {
-    padding-left: 5px;
-}
+  .umweltschutz {
+    background-image: url(/pictures/Umweltschutz.png);
+    background-size: cover;
+  }
 
-textarea {
-    max-width: 80vw;
-    height: 5em;
-}
+  .bmi {
+    background-image: url(/pictures/BMI.png);
+    background-size: cover;
+  }
 
-button {
-    border-radius: 10px;
-    padding: 5px 10px;
-    background-color: rgba(3, 152, 158, 0.1);
-    font-size: 15px;
-    font-weight: bold;
-}
+  .reiseführer {
+    background-image: url(/pictures/Reiseführer.png);
+    background-size: cover;
+  }
 
-@media (min-width: 700px) {
-    * {
-        font-size: 110%;
-    }
-
-    header {
-        font-size: 180%;
-    }
-
-    nav {
-        font-size: 100%;
-    }
-
-    h2 {
-        font-size: 150%;
-    }
+  .casino {
+    background-image: url(/pictures/Casino.png);
+    background-size: cover;
+  }
 }
