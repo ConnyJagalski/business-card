@@ -111,32 +111,32 @@ p {
 }
 
 .github {
-  background-image: url(./pictures/Github-Profil.png);
+  background-image: url(Github-Profil.png);
   background-size: cover;
 }
 
 .restaurant-gk {
-  background-image: url(./pictures/Restaurant.png);
+  background-image: url(Restaurant.png);
   background-size: cover;
 }
 
 .umweltschutz {
-  background-image: url(./pictures/Umweltschutz.png);
+  background-image: url(Umweltschutz.png);
   background-size: cover;
 }
 
 .bmi {
-  background-image: url(./pictures/BMI.png);
+  background-image: url(BMI.png);
   background-size: cover;
 }
 
 .reiseführer {
-  background-image: url(./pictures/Reiseführer.png);
+  background-image: url(Reiseführer.png);
   background-size: cover;
 }
 
 .casino {
-  background-image: url(./pictures/Casino.png);
+  background-image: url(Casino.png);
   background-size: cover;
 }
 
