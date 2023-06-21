@@ -10,7 +10,7 @@
 }
 
 html {
-  font-size: calc(1rem + 1vw);
+  font-size: calc(0.5rem + 1vw);
 }
 
 body {
@@ -20,6 +20,7 @@ body {
 }
 
 header {
+  margin-bottom: 2rem;
   width: 100%;
   position: sticky;
   top: 0;
@@ -65,6 +66,13 @@ p {
   margin: 1rem 2rem;
 }
 
+.language {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+}
+
 /* index.html */
 
 .img-me {
@@ -77,16 +85,14 @@ p {
 
 .index-main {
   width: 100%;
-  /* height: 100vh; */
   text-align: center;
 }
 
-.overflow {
-  height: 70vh;
-  overflow-y: scroll;
-}
-
 /* cv.html */
+
+.hidden {
+  visibility: hidden;
+}
 
 .cv-article {
   margin: 1rem;
@@ -181,7 +187,6 @@ p {
   background-color: rgba(89, 89, 184, 0.543);
   border-radius: 1rem;
   font-size: 1rem;
-  box-shadow: 0.5rem 0.5rem 1rem rgb(46, 43, 43);
 }
 
 .mail-link {
@@ -200,6 +205,11 @@ p {
 
   /* index.html */
 
+  .overflow {
+    height: 70vh;
+    overflow-y: scroll;
+  }
+
   .index-main {
     display: flex;
     justify-content: space-evenly;
@@ -214,6 +224,17 @@ p {
   }
 
   /* cv.html */
+
+  .hidden {
+    width: max-content;
+    height: max-content;
+    padding: 1rem;
+    visibility: visible;
+    border-radius: 1rem;
+    box-shadow: 
+      -0.1rem 0 0.1rem rgb(118, 84, 84) inset,
+      0 -0.1rem 0.1rem rgb(118, 84, 84) inset;
+  }
 
   .cv-main {
     font-size: 0.8rem;
@@ -247,8 +268,6 @@ p {
           0 -10vw 0 rgb(212, 116, 234) inset,
           -10vw 0 0 rgb(138, 220, 250) inset;
     transition: box-shadow 1s;
-    position: relative;
-    z-index: 1;
   }
 
   .projects-article:hover {
@@ -262,5 +281,16 @@ p {
     display: block;
     width: 30vw;
     height: 13vw;
+  }
+
+  /* contact.html */
+  
+  .mail-button {
+    transition:  0.75s;
+  }
+
+  .mail-button:hover {
+    font-size: 110%;
+    box-shadow: 0.5rem 0.5rem 1rem rgb(46, 43, 43);
   }
 }
