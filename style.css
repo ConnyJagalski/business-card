@@ -187,6 +187,13 @@ li {
   min-height: 150px;
 }
 
+/* activities.html */
+
+.css-battle {
+  background-image: url(css-battle.png);
+  background-size: cover;
+}
+
 /* contact.html */
 
 .contact-main {
