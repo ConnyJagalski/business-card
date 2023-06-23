@@ -7,10 +7,14 @@
 :root {
   --background: linear-gradient(rgb(58, 3, 109), rgba(137, 43, 226, 0.187) 50%, rgba(137, 43, 226, 0.091));
   --background-color: rgb(109, 72, 143);
+  --nav-link-color: rgb(210, 207, 207);
+  --transition: 0.75s;
+  --margin-1: 1rem;
+  --box-shadow: 0.5rem 0.5rem 1rem rgb(46, 43, 43);
 }
 
 html {
-  font-size: calc(0.5rem + 1vw);
+  font-size: calc(0.6rem + 1vw);
 }
 
 body {
@@ -21,13 +25,11 @@ body {
 
 header {
   margin-bottom: 2rem;
-  width: 100%;
   position: sticky;
   top: 0;
 }
 
 nav {
-  padding: 1rem;
   background-color: var(--background-color);
 }
 
@@ -36,34 +38,24 @@ li {
 }
 
 .nav-ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .nav-link {
   display: block;
-  color: rgb(210, 207, 207);
+  color: var(--nav-link-color);
   padding: 0.5rem;
+}
+
+.nav-link:hover {
+  font-size: 110%;
+  box-shadow: var(--box-shadow);
 }
 
 .current {
   font-weight: bold;
   font-size: 120%;
-}
-
-h1 {
-  margin: 1rem;
-}
-
-h2 {
-  padding: 1rem;
-}
-
-p {
-  margin: 1rem 2rem;
 }
 
 .language {
@@ -73,18 +65,50 @@ p {
   font-size: 2rem;
 }
 
+/* repetitive declarations */
+
+.full-width {
+  width: 100%;
+}
+
+.transition {
+  transition:  var(--transition);
+}
+
+.flex-even {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.m1 {
+  margin: var(--margin-1);
+}
+
+.p1 {
+  padding: 1rem;
+}
+
+.border-r1 {
+  border-radius: 1rem;
+}
+
 /* index.html */
 
 .img-me {
   width: 50vw;
   min-width: 250px;
   border-radius: 50%;
-  margin: 1rem;
-  box-shadow: 0.2rem 0.2rem 1rem rgb(46, 43, 43);
+  box-shadow: var(--box-shadow);
 }
 
 .index-main {
-  width: 100%;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -94,8 +118,8 @@ p {
   visibility: hidden;
 }
 
-.cv-article {
-  margin: 1rem;
+.cv-main {
+  flex-direction: column;
 }
 
 .cv-second-heading {
@@ -111,6 +135,10 @@ p {
 }
 
 /* projects.html */
+
+.projects-div {
+  flex-direction: column;
+}
 
 .project-info {
   margin-bottom: 3vh;
@@ -146,23 +174,15 @@ p {
   background-size: cover;
 }
 
-.projects-main {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .projects-article, .projects-link {
   width: 60vw;
   height: 30vw;
   border-radius: 1rem;
   display: block;
-  margin: 2rem;
 }
 
 .projects-article {
-  box-shadow: 1.5vw 1.5vw 2vw rgb(54, 54, 54);
+  box-shadow: var(--box-shadow);
   min-width: 300px;
   min-height: 150px;
 }
@@ -170,19 +190,14 @@ p {
 /* contact.html */
 
 .contact-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
 }
 
 .mail-heading {
-  margin: 1rem;
   font-size: 1.5rem;
 }
 
 .mail-button {
-  padding: 1rem;
   margin-top: 1rem;
   background-color: rgba(89, 89, 184, 0.543);
   border-radius: 1rem;
@@ -201,14 +216,17 @@ p {
 
   /* index.html */
 
+  .index-main {
+    flex-direction: row;
+  }
+
+  .pic-article {
+    height: 70vh;
+  }
+
   .overflow {
     height: 70vh;
     overflow-y: scroll;
-  }
-
-  .index-main {
-    display: flex;
-    justify-content: space-evenly;
   }
 
   .index-article {
@@ -224,19 +242,15 @@ p {
   .hidden {
     width: max-content;
     height: max-content;
-    padding: 1rem;
     visibility: visible;
     border-radius: 1rem;
-    box-shadow: 
-      -0.1rem 0 0.1rem rgb(118, 84, 84) inset,
-      0 -0.1rem 0.1rem rgb(118, 84, 84) inset;
+    box-shadow: var(--box-shadow) inset;
   }
 
   .cv-main {
     font-size: 0.8rem;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: row;
   }
 
   .cv-article {
@@ -248,10 +262,8 @@ p {
   /* projects.html */
 
   .projects-div {
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
   }
   
   .projects-article {
@@ -263,7 +275,6 @@ p {
           10vw 0 0 rgb(235, 104, 104) inset,
           0 -10vw 0 rgb(212, 116, 234) inset,
           -10vw 0 0 rgb(138, 220, 250) inset;
-    transition: box-shadow 1s;
   }
 
   .projects-article:hover {
@@ -280,13 +291,9 @@ p {
   }
 
   /* contact.html */
-  
-  .mail-button {
-    transition:  0.75s;
-  }
 
   .mail-button:hover {
     font-size: 110%;
-    box-shadow: 0.5rem 0.5rem 1rem rgb(46, 43, 43);
+    box-shadow: var(--box-shadow);
   }
 }
