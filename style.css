@@ -37,6 +37,10 @@ li {
   list-style-type: none;
 }
 
+i {
+  color: #000;
+}
+
 .nav-ul {
   align-items: center;
   flex-wrap: wrap;
@@ -132,6 +136,10 @@ li {
 
 .cv-article li {
   padding-top: 0.2rem;
+}
+
+.important {
+  text-shadow: 1px 1px white;
 }
 
 /* projects.html */
